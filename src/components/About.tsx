@@ -114,9 +114,24 @@ const About = () => {
       ref={containerRef}
       className="w-full relative text-white"
     >
+      {/* <div className=" w-full flex gap-5 justify-center items-center">
+        {logos?.map((logo, index) => (
+          <div
+            key={index}
+            className={`w-28  h-28 rounded-full flex justify-center items-center p-2`}
+          >
+            <img
+              key={index}
+              src={logo.icon}
+              alt={logo.name}
+              className="logo-item object-contain m-2"
+            />
+          </div>
+        ))}
+      </div> */}
       {/* Slide 1: Image left, text right */}
       <div className="about-slide h-screen flex items-center justify-between w-full">
-        <div className="left-content flex-1 flex items-center justify-center gap-5 h-full">
+        <div className="left-content bg-amber-100 flex-1 flex items-center justify-center gap-5 h-full">
           {mern?.logos?.map((logo, index) => (
             <div
               key={index}
@@ -153,7 +168,7 @@ const About = () => {
             <p className="mt-5 text-lg italic">{mean?.des}</p>
           </div>
         </div>
-        <div className="right-content h-full flex-1 flex items-center justify-center gap-5">
+        <div className="right-content bg-amber-100 h-full flex-1 flex items-center justify-center gap-5">
           {mean?.logos?.map((logo, index) => (
             <div
               key={index}

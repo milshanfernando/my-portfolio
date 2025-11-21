@@ -155,4 +155,8 @@ body {
       }
     }
   }
+
+  .card-border {
+    @apply border border-blue-950 bg-gray-800;
+  }
 }

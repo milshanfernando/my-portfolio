@@ -1,5 +1,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+// import TiltCard from "../TiltCard";
+import GlowCard from "../GlowCard";
+// import TiltCard from "../TiltCard";
 
 const workExperience = [
   {
@@ -128,9 +131,17 @@ const Experiences = () => {
               <img src="../../../public/images/virtusa.svg" alt="" />
             </div>
             <div className="flex justify-end items-center flex-1 m-5">
-              <div className=" rec bg-[#0c011e] rounded-lg p-5 w-3/5">
-                <p className=" text-xs">{exp.description}</p>
-              </div>
+              {/* <div className=" card glow rec bg-[#0c011e] rounded-lg p-5 w-3/5"></div> */}
+              <GlowCard>
+                <div>
+                  <p className=" italic text-sm">{exp.description}</p>
+                </div>
+              </GlowCard>
+              {/* <TiltCard>
+                <div className="w-full h-full flex justify-center items-center p-5">
+                  <p className=" italic text-sm">{exp.description}</p>
+                </div>
+              </TiltCard> */}
             </div>
             <div className="flex-1 m-5">
               <div className=" exp flex flex-col gap-2 mt-5">
