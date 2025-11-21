@@ -77,7 +77,7 @@ const Experiences = () => {
       gsap.from(logo, {
         opacity: 0,
         scale: 0.5,
-        duration: 0.4,
+        duration: 0.6,
         scrollTrigger: {
           trigger: block,
           start: "top 70%",
@@ -92,7 +92,7 @@ const Experiences = () => {
       gsap.from(rec, {
         opacity: 0,
         xPercent: -100,
-        duration: 0.4,
+        duration: 0.6,
         scrollTrigger: {
           trigger: block,
           start: "top 70%",
@@ -107,7 +107,7 @@ const Experiences = () => {
       gsap.from(exp, {
         opacity: 0,
         xPercent: 100,
-        duration: 0.4,
+        duration: 0.6,
         scrollTrigger: {
           trigger: block,
           start: "top 70%",
