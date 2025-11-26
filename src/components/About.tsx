@@ -2,32 +2,6 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-// const logos = [
-//   { name: "React", icon: "https://img.icons8.com/plasticine/100/react.png" },
-//   { name: "Angular", icon: "https://img.icons8.com/color/48/angularjs.png" },
-//   {
-//     name: "Typescript",
-//     icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo.png",
-//   },
-//   { name: "NodeJs", icon: "https://img.icons8.com/color/96/nodejs.png" },
-//   { name: "ExpressJs", icon: "https://img.icons8.com/ios/100/express-js.png" },
-//   { name: "MongoDb", icon: "https://img.icons8.com/color/96/mongo-db.png" },
-//   {
-//     name: "TailwindCss",
-//     icon: "https://img.icons8.com/color/96/tailwindcss.png",
-//   },
-//   { name: "Html5", icon: "https://img.icons8.com/color/96/html-5--v1.png" },
-//   { name: "Css3", icon: "https://img.icons8.com/color/96/css3.png" },
-//   { name: "Redux", icon: "https://img.icons8.com/color/96/redux.png" },
-//   {
-//     name: "Docker",
-//     icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-docker-a-set-of-coupled-software-as-a-service-logo-color-tal-revivo.png",
-//   },
-//   { name: "git", icon: "https://img.icons8.com/color/96/git.png" },
-//   { name: "GCP", icon: "https://img.icons8.com/color/96/google-cloud.png" },
-//   { name: "Figma", icon: "https://img.icons8.com/color/96/figma--v1.png" },
-// ];
-
 const mern = {
   logos: [
     { name: "MongoDb", icon: "https://img.icons8.com/color/96/mongo-db.png" },
@@ -130,8 +104,8 @@ const About = () => {
         ))}
       </div> */}
       {/* Slide 1: Image left, text right */}
-      <div className="about-slide h-screen flex items-center justify-between w-full">
-        <div className="left-content bg-amber-100 flex-1 flex items-center justify-center gap-5 h-full">
+      <div className="about-slide bg-white h-screen flex items-center justify-between w-full">
+        <div className=" flex-1 flex items-center justify-center gap-5 h-full">
           {mern?.logos?.map((logo, index) => (
             <div
               key={index}
@@ -150,11 +124,11 @@ const About = () => {
             </div>
           ))}
         </div>
-        <div className="right-content flex-1 h-full bg-[#13012a] flex justify-center items-center">
+        <div className=" flex-1 h-full flex justify-center items-center">
           <div className="text-center p-20">
             <h1>{mern?.topic}</h1>
             <h1>{mern?.title}</h1>
-            <p className="mt-5 text-lg italic">{mern?.des}</p>
+            <p className="mt-5 text-lg italic text-black">{mern?.des}</p>
           </div>
         </div>
       </div>
